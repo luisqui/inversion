@@ -1,0 +1,16 @@
+ion-grid,ion-col {
+    padding: 0;
+}
+i{
+    background:  linear-gradient(180deg, rgba(44, 82, 216, 0) 0%, rgba(44, 82, 216, 0.4) 100%), #54D1ED;
+    cursor: pointer;
+    font-size: 20px;
+    float: right;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titulo{
+    font-weight: 600;
+    margin: 0;
+}

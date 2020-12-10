@@ -1,0 +1,32 @@
+ion-card {
+    background:  linear-gradient(180deg, rgba(44, 82, 216, 0) 0%, rgba(44, 82, 216, 0.4) 100%), #54D1ED;
+    border-radius: 20px;
+    margin: 40px 0px 0px 0px;
+    min-height: 230px;
+    overflow: visible;
+}
+
+ion-card-content{
+    padding-bottom: 0px;
+}
+
+img {
+    bottom: -92%;
+    left: 17%;
+    position: absolute;
+}
+p{
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 36px;
+}
+.text {
+    color: white;
+    font-weight: 600;
+}
+
+.rowSaldo {
+    margin-top: 14%;
+}

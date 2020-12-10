@@ -1,0 +1,23 @@
+ion-card {
+    background: white;
+    border-radius: 20px;
+    margin: 20px 0px 40px 0px;
+}
+
+ion-label , ion-note{
+    font-size: 14px !important;
+    line-height: 21px;
+    color: #58506B !important;
+}
+
+ion-note{
+    font-weight: 600;
+}
+
+ion-item {
+    --border-color: #FAF9FD;
+}
+
+ion-item:last-child {
+    --border-color:white;
+}

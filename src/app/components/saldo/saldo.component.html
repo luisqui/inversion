@@ -1,0 +1,22 @@
+<ion-card>
+  <ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size = "4">
+          <p class="text">Eres estratega</p>
+        </ion-col>
+        <ion-col size = "8">
+          <img src="../../../assets/img/imgSaldo.png" alt="">
+        </ion-col>
+      </ion-row>
+      <ion-row class="rowSaldo">
+        <ion-col size = "12">
+          <h5 class="text">Tu saldo</h5>
+        </ion-col>
+        <ion-col size = "12">
+          <h1 class="text">{{saldo | currency:'$':'symbol':'4.0-0':'Es'}}</h1>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>

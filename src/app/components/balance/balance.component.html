@@ -1,0 +1,10 @@
+<ion-card>
+  <ion-card-content>
+    <ion-list>
+      <ion-item lines="i == data.length? 'none':'full'" *ngFor="let item of data; let i = index">
+        <ion-label>{{item.nombre}}</ion-label>
+        <ion-note slot="end">{{item.valor | currency:'$':'symbol':'4.0-0':'Es'}}</ion-note>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
