@@ -8,6 +8,11 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
+        path: '',
+        redirectTo: 'inicio',
+        pathMatch: 'full'
+      },
+      {
         path: 'inicio',
         loadChildren: () => import('../inicio/inicio.module').then(m => m.InicioPageModule)
       },
@@ -26,11 +31,6 @@ const routes: Routes = [
         loadChildren: () => import('../mas/mas.module').then(m => m.MasPageModule)
       }
     ]
-  },
-  {
-    path: '',
-    redirectTo: '/tabs/inicio',
-    pathMatch: 'full'
   }
 ];
 
