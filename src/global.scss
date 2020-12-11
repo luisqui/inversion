@@ -29,7 +29,11 @@
 * {
     font-family: 'Open Sans', sans-serif;
 }
+body {
+    background-color: #F8F8FC !important;
+}
 ion-card {
     box-shadow: none;
     max-width: 367px;
+    background-color: white;
 }

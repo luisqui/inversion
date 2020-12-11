@@ -29,7 +29,7 @@ export class MetasComponent implements OnInit {
     preloadImages: true,
     updateOnImagesReady: true,
     freeMode: true,
-    spaceBetween: 0,
+    spaceBetween: 10,
     loop: true,
     //autoplay: true,
     watchSlidesProgress: true,

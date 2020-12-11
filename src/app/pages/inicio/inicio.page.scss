@@ -5,6 +5,7 @@ ion-content {
    --offset-bottom: auto!important;
    --overflow: hidden;
    overflow: auto;
+   background: #F8F8FC !important;
    &::-webkit-scrollbar {
      display: none;
    }

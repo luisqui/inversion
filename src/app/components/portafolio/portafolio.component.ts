@@ -55,7 +55,7 @@ export class PortafolioComponent implements OnInit {
       },
       responsive: [
         {
-          breakpoint: 2000,
+          breakpoint: 20000,
           options: {
             chart: {
               width: 200
