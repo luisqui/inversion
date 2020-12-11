@@ -1,0 +1,49 @@
+<app-header [data]="data"></app-header>
+<ion-card>
+  <ion-card-content>
+    <ion-row>
+      <ion-col size ="6">
+        <div class="infoChart">
+          <img src="assets/img/robot.png" alt="robot">
+          <p class="textoP2">RoboAdvisor</p>
+          <p class="textoP1">10 Fondos</p>
+        </div>
+        <div id="chart">
+          <apx-chart
+            [series]="chartOptions.series"
+            [chart]="chartOptions.chart"
+            [labels]="chartOptions.labels"
+            [responsive]="chartOptions.responsive"
+            [legend]="options.legend"
+            [dataLabels]= "options.dataLabels"
+            [tooltip]="options.tooltip"
+            [colors]= "options.colors"
+            [plotOptions]="options.plotOptions"
+          ></apx-chart>
+        </div>
+      </ion-col>
+      <ion-col style="padding: 0;" size ="6">
+        <div>
+          <img src="assets/img/logoSkandia.png" alt="skandia">
+          <ion-badge color="success">15%</ion-badge>
+        </div>
+        <div>
+          <p class="textoP1">FIC Old Mutual Efectivo</p>
+          <p class="textoP1 weight">$240.000</p>
+          <p class="textoP2" style="color: #41CF69;">Tipo de activo</p>
+          <p class="textoP2">Renta fija</p>
+          <p class="textoP2">Depósito a la fija</p>
+        </div>
+        <div class="iconBox">
+          <i class="mdi mdi-chevron-left icon" style="float: left;"></i>
+          <i class="mdi mdi-chevron-right icon" style="float: right;"></i>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size ="12">
+        <p class="textoP2">Tu dinero se invierte de la forma más eficiente de acuerdo al perfil de riesgo asignado por nuestro RoboAdvisor.</p>
+      </ion-col>
+    </ion-row>
+  </ion-card-content>
+</ion-card>

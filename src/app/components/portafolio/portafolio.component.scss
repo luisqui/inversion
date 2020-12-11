@@ -1,0 +1,66 @@
+apx-chart {
+  left: -31%;
+  top: -10px;
+}
+
+ion-badge{
+  color: white;
+  font-weight: 600;
+  float: right;
+}
+ 
+ion-card{
+    border-radius: 20px;
+    margin: 20px 0px 40px 0px;
+}
+
+.icon {
+  border: 1px solid #FAF9FD;
+  border-radius: 50px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+}
+
+.iconBox {
+  margin-top: 8px;
+}
+
+.infoChart {
+  position: absolute;
+  top: 17%;
+  left: 25%;
+  text-align: center;
+}
+
+.textoP1,.textoP2 {
+  color: rgba(88,80,107,1);
+}
+
+.textoP1{
+  font-size: 12px;
+}
+.textoP2{
+  font-size: 10px;
+}
+
+.weight {
+  font-weight: 600;
+  margin: 5px 0px 5px 0px;
+}
+
+
+@media (min-width: 411px){
+  .infoChart{
+    left: 18%;
+  }
+}
+
+@media (min-width:320px) and ( max-width: 350px){
+  ion-badge{
+    float: none;
+  }
+  apx-chart {
+    left: -44%;
+  }
+}

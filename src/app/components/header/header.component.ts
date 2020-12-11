@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { HeaderData } from '../../models/core.models';
 
 @Component({
   selector: 'app-header',
@@ -6,7 +7,11 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  @Input()data;
+  @Input()data:HeaderData = {
+    nombre:"Camila",
+    icon:"mdi-bell-outline",
+    badge:null
+  };
   constructor() { }
 
   ngOnInit() {}

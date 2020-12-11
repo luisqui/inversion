@@ -1,0 +1,17 @@
+<ion-card>
+  <ion-card-content>
+    <ion-list>
+      <ion-item lines="i == data.length? 'none':'full'" *ngFor="let item of data; let i = index">
+        <ion-row>
+          <ion-col size="8">
+            <h2>{{item.titulo}}</h2>
+            <p>{{item.descripcion}}</p>
+          </ion-col>
+          <ion-col size = "4">
+            <img src="assets/img/blog/{{item.img}}.png" alt="">
+          </ion-col>
+        </ion-row>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>

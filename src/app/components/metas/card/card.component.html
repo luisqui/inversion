@@ -1,8 +1,62 @@
 <ion-card>
   <ion-card-header>
-    info 1
+      <ion-row>
+        <ion-col size="12">
+          <img src="assets/img/{{data.img}}.png" alt="">
+        </ion-col>
+        <ion-col style="min-height: 66px;" size="12">
+          <p>{{data.nombre}}</p>
+        </ion-col>
+      </ion-row>
   </ion-card-header>
   <ion-card-content>
-    info 2
+    <ion-row>
+        <circle-progress
+          [backgroundStroke]= "'#000000'"
+          [backgroundStrokeWidth]= "0"
+          [backgroundPadding]= "5"
+          [radius]= "20"
+          [space]= "-5"
+          [units]="'%'"
+          [toFixed]= "0"
+          [maxPercent]= "100"
+          [outerStrokeGradient]= true
+          [outerStrokeWidth]= "5"
+          [outerStrokeColor]= "'#54d1ed'"
+          [outerStrokeGradientStopColor]= "'#16c9f2e0'"
+          [innerStrokeColor]= "'#faf9fd'"
+          [innerStrokeWidth]= "5"
+          [titleColor]= "'#16c9f2e0'"
+          [titleFontWeight]="600"
+          [titleFontSize]="12"
+          [unitsFontSize]="13"
+          [unitsFontWeight]="600"
+          [unitsColor]="'#16c9f2e0'"
+          [subtitleFontSize]= "12"
+          [imageHeight]= "137"
+          [animateTitle]= false
+          [animationDuration]= "1000"
+          [showTitle]= true
+          [showSubtitle]= false
+          [showUnits]= true
+          [showBackground]= false
+          [clockwise]= false
+          [startFromZero]= false
+          [lazy]= false
+          [percent]="porcentaje"
+          [animation]=true
+      ></circle-progress>
+  
+      <ion-col size="6" style="margin-top: 5%; margin-left: 2%;">
+        <ion-row>
+          <ion-col size="12">
+              <h1>{{data.progreso | currency:'$':'symbol':'1.0-0':'Es'}}</h1>
+          </ion-col>
+          <ion-col size="12">
+            <h2>{{data.objetivo | currency:'$':'symbol':'1.0-0':'Es'}}</h2>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
   </ion-card-content>
 </ion-card>

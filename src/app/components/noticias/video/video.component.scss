@@ -1,0 +1,58 @@
+ion-card {
+    background: white;
+    border-radius: 20px;
+    margin: 20px 0px 40px 0px;
+}
+
+iframe{
+  background: white;  
+  border: transparent;
+  border-radius: 20px;
+  height: 100%;
+  margin-top: 20px;
+  min-height: 211px;
+  width: 100%;
+}
+
+.video {
+    position: relative;
+    min-height: 300px;
+    min-width: 327px;
+    width: 100%;
+  }
+.overlay {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    opacity: 1;
+    transition: 0.5s ease;
+  }
+  
+  .overlay:hover .overlay {
+    opacity: 0;
+  }
+  
+  img{
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  h1,h2 {
+    color: white;
+  }
+  h1{
+      font-weight: 600;
+      margin: 0;
+  }
+  h2{
+      font-size: 14px;
+      margin-top: 5px;
+  }
+
+  .text {
+      padding: 20px;
+      position: absolute;
+      text-align: left;
+      top:10px;
+      width: 100%;
+  }

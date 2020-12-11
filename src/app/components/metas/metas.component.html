@@ -1,2 +1,6 @@
 <app-header class="header" [data]="data"></app-header>
-<app-card></app-card>
+<ion-slides [options]="slidesOptions">
+    <ion-slide *ngFor="let item of dataCard; let i = index">
+        <app-card  [data]="dataCard[i]"></app-card>
+    </ion-slide>
+</ion-slides>

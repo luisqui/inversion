@@ -5,6 +5,7 @@ ion-tab-bar {
     bottom: 35px;
     border: 0;
     border-radius: 16px;
+    background: transparent;
     ion-tab-button {
         color: #A99DC6;
         background: none; 
@@ -48,4 +49,8 @@ ion-tab-bar {
         box-shadow: 0 0 0 85em rgb(255 255 255 / 100%);
         content: "";
     }
+}
+::ng-deep.tabs-inner {
+    position: unset !important;
+    contain: none !important;
 }
